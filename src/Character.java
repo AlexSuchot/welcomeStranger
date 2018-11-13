@@ -35,10 +35,6 @@ public abstract class Character {
         this.money = money;
     }
 
-    public String ToString() {
-        return getInventory() + "coucou";
-    }
-
 }
 
 
