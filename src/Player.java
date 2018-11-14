@@ -16,7 +16,7 @@ public class Player extends Character {
         }
     }
 
-    public void buyItem(Item item) {
+    public void buyItem(Player player, Item item) {
         item.getName();
 
     }

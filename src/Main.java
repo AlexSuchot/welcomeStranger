@@ -29,6 +29,7 @@ public class Main {
         System.out.println("La taille du " + player1.getInventory().size());
 
         Double result = player1.getMoney() - player1.getInventory().get(1).getPrice();
+        player1.Describe(player1);
         System.out.println("The player 1 has : " + player1.getMoney() + "$. He's buying : " +
                 player1.getInventory().get(1).getName() + " which cost : " +
                 player1.getInventory().get(1).getPrice() + "$. He still have : " +
