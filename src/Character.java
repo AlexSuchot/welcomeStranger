@@ -1,21 +1,22 @@
+import java.util.List;
 import java.util.Map;
 
 public abstract class Character {
-    private Map<Integer, Item> inventory;
+    private List<Item> inventory;
     private String name;
     private Double money;
 
-    public Character(Map<Integer, Item> inventory, String name, Double money) {
+    public Character(List<Item> inventory, String name, Double money) {
         this.inventory = inventory;
         this.name = name;
         this.money = money;
     }
 
-    public Map<Integer, Item> getInventory() {
+    public List<Item> getInventory() {
         return inventory;
     }
 
-    public void setInventory(Map<Integer, Item> inventory) {
+    public void setInventory(List<Item> inventory) {
         this.inventory = inventory;
     }
 

@@ -2,7 +2,7 @@ import java.util.List;
 import java.util.Map;
 
 public class Vendor extends Character {
-    public Vendor(Map<Integer, Item> inventory, String name, Double money) {
+    public Vendor(List<Item> inventory, String name, Double money) {
         super(inventory, name, money);
     }
 
@@ -12,7 +12,7 @@ public class Vendor extends Character {
         System.out.print(itemCount - 1 + ". " + vendor.getInventory().get(0).getName() + ". Price : " + vendor.getInventory().get(0).getPrice() + "$. Category : " + vendor.getInventory().get(0).getType() + " | ");
         for (int i = 1; i < vendor.getInventory().size(); i++) {
 
-            if (i % 4 == 0) {
+            if (i % 3 == 0) {
                 System.out.println("");
             }
 
